@@ -1,10 +1,5 @@
-<?php namespace Jurosh\PDFMerge;
+<?php namespace NinoSimeon\PDFMerge;
 
-/**
- * Description of PdfObject
- *
- * @author jurosh
- */
 class PdfObject {
     
     public $path;

@@ -1,7 +1,7 @@
 <?php require '../vendor/autoload.php';
 
 // create merger instance
-$pdf = new \Jurosh\PDFMerge\PDFMerger;
+$pdf = new \NinoSimeon\PDFMerge\PDFMerger;
 
 // do work
 

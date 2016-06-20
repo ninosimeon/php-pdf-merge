@@ -5,28 +5,33 @@ PDF Merge library for PHP.
 Install in composer:
 
 ```json
-"jurosh/pdf-merge": "dev-master"
+"ninosimeon/pdf-merge": "1.0.0"
 ```
 
 ## Highlights
 
-Pdf merging with modes portrait/landscape.
-
-Tested in Laravel4 framework.
+Combina documentos PDF. Basado en la librería FPDI 1.6.1, FPDF.
 
 ## Usage
 
 ```php
 // Autoload classses...
 
-// and we can do stuff
-$pdf = new \Jurosh\PDFMerge\PDFMerger;
+// para invocar debes hacer lo siguiente
+use NinoSimeon\PDFMerge\PDFMerger;
+class xxx
+{
+	public function yyyy() {
+		$pdf = new \NinoSimeon\PDFMerge\PDFMerger;
+	}
+}
 
-// add as many pdfs as you want
+
+// agrega todas las páginas que tu quieras
 $pdf->addPDF('path/to/source/file.pdf', 'all', 'vertical')
   ->addPDF('path/to/source/file1.pdf', 'all')
   ->addPDF('path/to/source/file2.pdf', 'all', 'horizontal');
 
-// call merge, output format `file`
+// al final puedes generar el archivo con este comando
 $pdf->merge('file', 'path/to/export/dir/file.pdf');
 ```

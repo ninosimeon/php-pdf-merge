@@ -1,4 +1,4 @@
-<?php namespace Jurosh\PDFMerge;
+<?php namespace NinoSimeon\PDFMerge;
 
 use Exception;
 use fpdi\FPDI;
