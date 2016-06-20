@@ -1,8 +1,8 @@
 <?php namespace NinoSimeon\PDFMerge;
 
 use Exception;
-use fpdi\FPDI;
-use fpdf\FPDF;
+use FPDI;
+use FPDF;
 
 /**
  * Basic merging of PDF files into one file
